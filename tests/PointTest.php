@@ -39,6 +39,12 @@ class PointTest extends TestCase
       $this->assertNotEquals(0, $distance);
       $this->assertLessThan(20, $distance);
    }
+   public function testDeplacement() {
+      $p1 = new Point(1,2);
+      $p1->deplace(5,7);
+      $this->assertEquals(6, $p1->getX());
+      $this->assertEquals(9, $p1->getY());
+   }
 }
 
 

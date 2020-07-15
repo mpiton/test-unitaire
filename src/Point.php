@@ -18,6 +18,10 @@ class Point
    public function distance(Point $point) {
       return sqrt(($point->x - $this->x)**2) +(($point->y - $this->y)**2);
    }
+   public function deplace($a, $b) {
+   $this->x += $a;
+   $this->y += $b;
+   }
 }
 
 
